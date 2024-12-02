@@ -188,18 +188,8 @@ def add_res(results, ax, color='green'):
 
 
 # +++++++++++++++++++++++++++++++++++++++++++++++++++ Detection +++++++++++++++++++++++++++++++++++++++++++++++++++
-"""
-This section contains the code to perform modulated detection with the pre-trained model.
-This model wasn't fine-tuned for any specific task.
 
-The 'mdetr_efficientnetB5' model is loaded from the cache (torch hub)
-
-To see list of all the models you can try: torch.hub.list('ashkamath/mdetr:main')
-To get info on the model you can try: torch.hub.help('ashkamath/mdetr:main', 'mdetr_efficientnetB5')
-"""
-
-
-model, postprocessor = torch.hub.load('ashkamath/mdetr:main', 'mdetr_efficientnetB5', pretrained=True, return_postprocessor=True)
+model, postprocessor = torch.hub.load('ChiaraFalagario/Gaze-MDETR:main', 'mdetr_efficientnetB5', pretrained=True, return_postprocessor=True)
 model = model.cuda()
 model.eval();
 
