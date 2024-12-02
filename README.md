@@ -2,6 +2,8 @@
 
 This is the repository to use GazeMDETR, combining gaze information in the original MDETR architecture.
 
+![modarchitecture](https://github.com/user-attachments/assets/269e47fb-c532-4f23-9abd-fef3a3d66999)
+
 ## Abstract
 
 The integration of robotics and Artificial Intelligence (AI) in healthcare applications holds significant potential for the development of innovative rehabilitation strategies. Great advantage of these new emerging technologies is the possibility to offer a rehabilitation plan that is personalised to each patient, especially in aiding individuals
