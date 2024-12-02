@@ -1,0 +1,7 @@
+per far funzionare GazeMDETR servono:
+
+- codice python demo
+- modelli modificati (mdetr_gaze e transformer_gaze)
+x tutta la cartella di MDETR (ashkamath_mdetr_main) --> no perche c'e gia torch.hub.load (bisogna capire come scaricare solo i modelli modificati di gazeMdetr) hubconf.py
+
+capire come viene creato il modello di mdetr e come si puo fare per inserire direttamente il modello modificato di GazeMDETR
