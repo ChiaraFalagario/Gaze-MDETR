@@ -126,7 +126,6 @@ dependencies:
       - onnxruntime==1.18.1
       - packaging==21.3
       - pandas==2.0.3
-      - panopticapi==0.1
       - pillow==10.4.0
       - prettytable==3.10.0
       - protobuf==5.27.2
