@@ -135,7 +135,12 @@ A threshold of **0.5** was set for the IoU. The prediction is considered as:
 - **False Positive** (Acc@1 = 0) if the IoU is less than 0.5.
 
 Thus, the *Accuracy@1* metric measures the percentage of predictions where the predicted bounding box correctly overlaps with the ground truth (IoU >= 0.5).
-
+The experiments revealed the following results:
+| Session | GazeMDETR [Acc@1] | MDETR [Acc@1] |
+| :-------------: | :-------------: | :-------------: |
+| 1 | **0.82** | 0.64 |
+| 2 | **0.51** | 0.34 |
+| 3 | **0.41** | 0.24 |
 
 ## Application of the architecture in a rehabilitation scenario
 
@@ -143,6 +148,10 @@ In this section, the changes made to the GazeMDETR pipeline for evaluating its p
 
 ### Qualitative Evaluation
 Instead of a quantitative analysis, a qualitative evaluation was performed to understand the model's behavior in real-life scenarios and optimize its performance. This approach helps identify common errors, assess the system's robustness under varying conditions (e.g., object angles, colors, and sizes), and test the model's ability to generalize to new scenarios.
+The experiments revealed the following results, mediating the values of Acc@1 for 16 subjects:
+| GazeMDETR [Acc@1] | MDETR [Acc@1] |
+| :-------------: | :-------------: |
+| **0.66** | 0.34 |
 
 ### Human Attention Estimation Module
 The original pipeline relied on Face Detection using OpenPose to estimate head bounding boxes. However, in rehabilitation settings, where children are often accompanied by other people, OpenPose struggled to isolate the child’s face. As a result, the face detection and pose estimation modules were replaced with manually annotated head bounding boxes, which were then used for offline processing in the fine-tuned VTD module.
