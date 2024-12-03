@@ -22,8 +22,6 @@ Now you can run the ```GazeMDETR_demo.py``` script to obtain the predictions for
 You can customize the names for the test set and the results folders changing them in the script.
 
 ## Data
-The tests were conducted on the GazeMDETRcluttered test set, which is stored in the iCubstor remote folder, under the name "GazeMDETR_data".
-The data collected for the initial tests of MDETR and GazeMDETR and the outputs of the tests are accessible in the same folder, under the name "GazeMDETR_other" and then for each participant in the folder "0.RESULTS". 
 
 ### GazeMDETRcluttered test set
 
@@ -32,6 +30,9 @@ objects (note that in a single session, the same object can be present multiple 
 1. Heterogeneous cluttered scenario
 2. Scenario with only boxes
 3. Scenario with only repeated objects
+
+The tests were conducted on the GazeMDETRcluttered test set, which is stored in the iCubstor remote folder, under the name "GazeMDETR_data".
+The data collected for the initial tests of MDETR and GazeMDETR and the outputs of the tests are accessible in the same folder, under the name "GazeMDETR_other" and then for each participant in the folder "0.RESULTS". 
 
 ## Original MDETR repository
 
