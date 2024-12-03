@@ -121,9 +121,7 @@ These captions simulate a range of interactions with different levels of detail 
 The performance of **GazeMDETR** was evaluated and compared with MDETR using the *Accuracy@1* metric (denoted as Acc@1).
 For each image, the predicted bounding box of the object was compared to the annotated ground truth by calculating the *Intersection over Union (IoU)*, also known as the *Jaccard index*, defined as:
 
-\[
-J(A, B) = \frac{A \cup B}{A \cap B}
-\]
+$J(A, B) = \frac{|A \cup B|}{|A \cap B|}$
 
 Where:
 - \(A\) is the predicted bounding box.
